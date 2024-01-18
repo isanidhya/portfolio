@@ -77,12 +77,12 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:sanidhyasahu1120@gmail.com" class="contact-link">sanidhyasahu1120@gmail.com</a>
+              <a href="mailto:sanidhyasahu612@gmail.com" class="contact-link">sanidhyasahu612@gmail.com</a>
             </div>
 
           </li>
 
-          <li class="contact-item">
+          <!--<li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -94,9 +94,9 @@
               <a href="tel:+916267367557" class="contact-link">+91 6267367557</a>
             </div>
 
-          </li>
+          </li> -->
 
-          <li class="contact-item">
+          <!--<li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -105,10 +105,10 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="2004-08-29">August 29, 2004</time>
+              <time datetime="2000-12-00">December 00, 2000</time>
             </div>
 
-          </li>
+          </li>-->
 
           <li class="contact-item">
 
@@ -193,7 +193,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link onclick="openPdf()">Resume</button>
           </li>
 
           <li class="navbar-item">
@@ -228,9 +228,7 @@
 
         <section class="about-text">
           <p>
-            A programmer with an ardent passion for Development and IOT.
-To develop my talents & knowledge and learn more about my subject of study, I have worked on a numerous impactful projects. And I continue to freqently learn about relevant topics while actively working and learning in the field of IOT; Basic Computer Hardware and its Architehture.
-          </p>
+            As a passionate programmer deeply immersed in the realms of Development and IoT, I've contributed to numerous impactful projects, showcasing my expertise in Basic Computer Hardware and its architecture. Constantly evolving, I'm dedicated to expanding my talents and knowledge in these dynamic fields.</p>
 
           
         </section>
@@ -257,8 +255,7 @@ To develop my talents & knowledge and learn more about my subject of study, I ha
                 <h4 class="h4 service-item-title">Learning</h4>
 
                 <p class="service-item-text">
-                  Passionate and dedicated learner actively pursuing expertise in hardware, software development, and data structures & algorithms to drive innovation and contribute effectively to dynamic technical environments.
-                </p>
+                  Passionate and dedicated learner actively pursuing hardware, software development, and data structures & algorithms expertise to drive innovation and contribute effectively to dynamic technical environments.</p>
               </div>
 
             </li>
@@ -273,8 +270,7 @@ To develop my talents & knowledge and learn more about my subject of study, I ha
                 <h4 class="h4 service-item-title">Projects</h4>
 
                 <p class="service-item-text">
-                  Consistently working on projects and internships and deploying them relevant to the field, all of which could be viewed on the projects section.
-                </p>
+                  Consistently working on projects and internships and deploying them relevant to the field could be viewed in the projects section.</p>
               </div>
 
             </li>
@@ -289,8 +285,7 @@ To develop my talents & knowledge and learn more about my subject of study, I ha
                 <h4 class="h4 service-item-title">Open Source</h4>
 
                 <p class="service-item-text">
-                  Contributed to open source organisations and communities well as developed open-source solutions for competitions and student developer hackathons.
-                </p>
+                  Contributed to open-source organisations and communities and developed open-source solutions for competitions and student developer hackathons.</p>
               </div>
 
             </li>
@@ -305,8 +300,7 @@ To develop my talents & knowledge and learn more about my subject of study, I ha
                 <h4 class="h4 service-item-title">Travelling</h4>
 
                 <p class="service-item-text">
-                  I have a passion for travelling, this passion keeps me going and gives me a motivation to keep working :)
-                </p>
+                  I have a passion for travelling, this passion keeps me going and gives me the motivation to keep working :)</p>
               </div>
 
             </li>
@@ -365,8 +359,22 @@ To develop my talents & knowledge and learn more about my subject of study, I ha
 
           <!-- Open the PDF in a New Tab -->
           <a href="resume.pdf" target="_blank">
-            <button><h3 class="h3 skills-title">Click here to Open Resume</h3></button>
+            <button><h3 class="h3 skills-title">Download/View Separately</h3></button>
           </a>
+          
+          <!-- open pdf in same window-->
+          <iframe id="myFrame" style="display:none" width="835" height="700"></iframe>
+
+          <!-- <button onclick = "openPdf()">Button</button> -->
+
+            <script type="text/javascript">
+              function openPdf()
+              {
+                var omyFrame = document.getElementById("myFrame");
+                omyFrame.style.display="block";
+                omyFrame.src = "resume.pdf";
+              }
+            </script>
 
         
         
